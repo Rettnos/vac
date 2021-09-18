@@ -1,12 +1,12 @@
 <?php
-	$rut='./';
+	$ru0='./';
 	$db='db';
 	$cl1='cursos';
 	$dir1='./';
 	$dir2='./detalle.php?p=';
 
 	function index($rut){
-		global $db, $cl1;
+		global $db, $cl1;//
 		require_once($rut.DIRMOR.$db.'.php');
 		require_once($rut.DIRMOR.$cl1.'.php');
 		$_db = new $db();
@@ -27,4 +27,3 @@
 
 		return $inf;
 	}
-?>
